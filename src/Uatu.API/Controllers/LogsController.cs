@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Uatu.API.Models.Request;
 using Uatu.Core.Entities;
@@ -23,12 +24,12 @@ namespace Uatu.API.Controllers
         public async Task<IActionResult> Get([FromQuery]SearchLogRequestViewModel requestQuery)
         {
             try
-            {                
+            {
                 if (!ModelState.IsValid)
                     return BadRequest(requestQuery);
 
                 var result = await _dbConnector.Read(requestQuery.Application, requestQuery.Message, requestQuery.RequestKey, requestQuery.Level, requestQuery.Since.Value, requestQuery.Until.Value);
-                return Ok();
+                return Ok(result.Content);
             }
             catch
             {

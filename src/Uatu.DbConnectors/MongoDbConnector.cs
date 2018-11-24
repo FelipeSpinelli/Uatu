@@ -50,8 +50,8 @@ namespace Uatu.DbConnectors
                 try
                 {
                     var query = GetQuery(application, message, requestKey, level, since, until);
-                    var items = _collection.FindAsync(query);
-                    result.SetContent(items.Result as IEnumerable<Log>);
+                    var items = _collection.FindAsync(query).Result.ToList();
+                    result.SetContent(items as IEnumerable<Log>);
                 }
                 catch (Exception ex)
                 {
@@ -67,7 +67,7 @@ namespace Uatu.DbConnectors
             {
                 var result = new Result();
                 try
-                {
+                {                    
                     _collection.InsertOneAsync(log);
                 }
                 catch (Exception ex)

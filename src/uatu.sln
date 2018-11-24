@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.API", "Uatu.API\Uatu.API.csproj", "{03740A56-D7C3-4CBB-851C-FCC227941E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uatu.API", "Uatu.API\Uatu.API.csproj", "{03740A56-D7C3-4CBB-851C-FCC227941E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.Core", "Uatu.Core\Uatu.Core.csproj", "{E87ABD88-F002-4653-9731-16EA515F8049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uatu.Core", "Uatu.Core\Uatu.Core.csproj", "{E87ABD88-F002-4653-9731-16EA515F8049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.DbConnectors", "Uatu.DbConnectors\Uatu.DbConnectors.csproj", "{0B5F7B88-EF23-441D-A438-C7210AB04BDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uatu.DbConnectors", "Uatu.DbConnectors\Uatu.DbConnectors.csproj", "{0B5F7B88-EF23-441D-A438-C7210AB04BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.DbConnectors.Tests", "..\tests\Uatu.DbConnectors.Tests\Uatu.DbConnectors.Tests.csproj", "{6287FAFA-1C27-4BB2-A63E-217F71545DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0B5F7B88-EF23-441D-A438-C7210AB04BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B5F7B88-EF23-441D-A438-C7210AB04BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B5F7B88-EF23-441D-A438-C7210AB04BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6287FAFA-1C27-4BB2-A63E-217F71545DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6287FAFA-1C27-4BB2-A63E-217F71545DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6287FAFA-1C27-4BB2-A63E-217F71545DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6287FAFA-1C27-4BB2-A63E-217F71545DF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
