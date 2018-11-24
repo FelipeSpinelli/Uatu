@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.API", "..\Uatu.API\Uatu.API.csproj", "{03740A56-D7C3-4CBB-851C-FCC227941E99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.API", "Uatu.API\Uatu.API.csproj", "{03740A56-D7C3-4CBB-851C-FCC227941E99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uatu.Core", "Uatu.Core\Uatu.Core.csproj", "{E87ABD88-F002-4653-9731-16EA515F8049}"
 EndProject
